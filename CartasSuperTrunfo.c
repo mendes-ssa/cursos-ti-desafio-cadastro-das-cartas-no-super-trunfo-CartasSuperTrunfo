@@ -11,9 +11,9 @@ int main() {
     printf("\nInforme uma única letra que representará o estado da cidade (exemplo: B para Bahia):\n");
     scanf(" %c", &varEstado_01); //O espaço antes de %c evita problemas com '\n'
 
-    getchar(); // Consome o '\n' do scanf
+    getchar(); // Consome o '\n' do scanf (Resolve problema de "pulo" da linha)
     printf("\nInforme o nome completo da cidade selecionada:\n");
-    fgets(varCidade_01, sizeof(varCidade_01), stdin); // Garantindo que o nome da cidade não ultrapasse o buffer
+    fgets(varCidade_01, sizeof(varCidade_01), stdin); // Garantindo que o nome da cidade não ultrapasse o buffer (Resolve nomes com espaço, mas não resolve acentuação)
     varCidade_01[strcspn(varCidade_01, "\n")] = '\0'; // Remove '\n'
     
     printf("\nInforme a população da cidade (número total de habitantes):\n");
@@ -22,11 +22,11 @@ int main() {
     printf("\nInforme a área da cidade em km²:\n");
     scanf("%f", &varArea_01);
 
-    getchar(); // Consome o '\n' do scanf após a entrada de float
+    getchar(); // Consome o '\n' do scanf após a entrada de float (Resolve problema de "pulo" da linha)
     printf("\nInforme o Produto Interno Bruto (PIB) da cidade em bilhões:\n");
     scanf("%f", &varPIB_01);
 
-    getchar(); // Consome o '\n' do scanf após a entrada de float
+    getchar(); // Consome o '\n' do scanf após a entrada de float (Resolve problema de "pulo" da linha)
     printf("\nInforme o número de pontos turísticos da cidade:\n");
     scanf("%d", &varPontosTuristivos_01);
 
@@ -54,6 +54,7 @@ int main() {
     printf("\nQuantos pontos turísticos essa cidade oferece aos visitantes?\n");
     scanf("%d", &varPontosTuristivos_02);
     
+    //RESULTADO, INFORMAÇÃO DAS CARTAS
     printf("\nCARTA 01");
     printf("\nEstado: %c", varEstado_01);
     printf("\nCódigo: %c01", varEstado_01);
