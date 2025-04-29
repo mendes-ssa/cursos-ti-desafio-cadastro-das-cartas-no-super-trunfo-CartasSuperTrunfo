@@ -37,8 +37,8 @@ int main() {
     printf("\nInforme o número de pontos turísticos da primeira cidade:\n");
     scanf("%d", &varPontosTuristicos_01);
         //CÁLCULOS
-            varDensidadePopulacional_01 = varPopulação_01/varÁrea_01;
-            varPIBperCapita_01 = varPIB_01/varPopulação_01;
+            varDensidadePopulacional_01 = varPopulacao_01/varArea_01;
+            varPIBperCapita_01 = varPIB_01/varPopulacao_01;
 
     //DADOS SEGUNDA CARTA
     printf("Chegou a vez de cadastrar os dados da segunda carta. A estrutura é a mesma da primeira.\nVamos lá?\n\nCadastro da Segunda Carta");
@@ -65,8 +65,8 @@ int main() {
     printf("\nQuantos pontos turísticos a segunda cidade oferece aos visitantes?\n");
     scanf("%d", &varPontosTuristicos_02);
         //CÁLCULOS
-            varDensidadePopulacional_02 = varPopulação_02/varÁrea_02;
-            varPIBperCapita_02 = varPIB_02/varPopulação_02;
+            varDensidadePopulacional_02 = varPopulacao_02/varArea_02;
+            varPIBperCapita_02 = varPIB_02/varPopulacao_02;
     
     //RESULTADO, INFORMAÇÃO DAS CARTAS
     printf("\nCARTA 01");
@@ -89,7 +89,7 @@ int main() {
     printf("\nPIB: R$ %.2f", varPIB_02);
     printf("\nNúmero de Pontos Turísticos: %d", varPontosTuristicos_02);
     printf("\nDensidade Populacional: %.1f Hab/km²", varDensidadePopulacional_02);
-    printf("\nPIB per Capita: R$ %.2f", varPIBperCapita_02);
+    printf("\nPIB per Capita: R$ %.2f\n", varPIBperCapita_02);
 
     return 0;
 }
