@@ -122,7 +122,7 @@ int main() {
     printf("\nNúmero de Pontos Turísticos: %d", varPontosTuristicos_02);
     printf("\nDensidade Populacional: %.1f Hab/km²", varDensidadePopulacional_02);
     printf("\nPIB per Capita: R$ %.2f", varPIBperCapita_02);
-    printf("\nSuper Poder: %.3f", varSuperPoder_01);
+    printf("\nSuper Poder: %.3f", varSuperPoder_02);
 
     //RESULTADO DA COMPARAÇÃO
     printf("\n\n===== RESULTADO DA COMPARAÇÃO DAS CARTAS =====\n");
